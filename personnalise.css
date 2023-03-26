@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-image: url('1.webp');
+    color: rgb(30, 32, 186);
+    text-transform: capitalize;
+    margin-top: 10px;
+    font: 1em sans-serif;
+}
+.g{
+    background-size: cover;
+}
+.corps{
+    width: 50%;
+}
+.cont{
+    background-color: rgb(223, 231, 199);
+    border-radius: 10px;
+}
+.tout{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.gauche{
+    margin-right: 50px;
+}
+.droite{
+    margin-left: 100px;
+}
+textarea{
+    color: rgb(114, 89, 25);
+    resize: none;
+    height: 1200px;
+    width: 610px;
+    border-radius: 10px;
+    background-color: rgb(223, 231, 199);
+}
+.bouton{
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 40%; 
+}
+.bouton .first{
+    border-radius: 2px;
+    margin-right: 25px;
+    outline: none;
+    border: 5px;
+    font-size: 15px;
+    background-color: rgb(239, 197, 43);
+    height: 30px;
+    width: 190px;
+    transition: transform 0.5s;
+    cursor: pointer;   
+}
+.bouton .second{
+    outline: none;
+    background-color: rgb(239, 197, 43);
+    font-size: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 5px;
+    height: 30px;
+    width: 190px;
+    transition: transform 0.5s;
+    margin-bottom: 10px;   
+}
+::placeholder{
+    padding: 5px;
+    font: 1em sans-serif;
+    color: rgb(30, 32, 186);
+}
+.bouton .first:hover, .bouton .second:hover{
+    transform: scale(1.05);
+    background-color: transparent;
+    color: rgb(239, 197, 43);
+    border-radius: 5px;
+    border-color: aliceblue;
+   
+}
+@media screen and (max-width:920px){
+    form .droite, .bouton{
+        margin-left:  0px;
+    }
+}
